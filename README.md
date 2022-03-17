@@ -4,7 +4,7 @@ In this repo, we are using ROS1, RASA chatbot and developing a robot for elderly
 If you like the project give me a star! :star: 
 
 You can see the video: &nbsp;&nbsp;
-[![website](./img/youtube-dark.svg)](https://www.youtube.com/watch?v=un2OviZDSlA)
+[![website](./img/youtube-dark.svg)](https://www.youtube.com/channel/UCyRBig4xgAdaRdIz14Xymrg)
 &nbsp;&nbsp;
 ---
 
