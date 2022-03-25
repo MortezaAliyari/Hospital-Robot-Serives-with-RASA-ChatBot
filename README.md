@@ -1,4 +1,4 @@
-# Hospital-Robot-Serives-with-ChatBot
+# Hospital-Robot-Serives-with-RASA ChatBot
 In this repo, we are using ROS1, RASA chatbot and developing a robot for elderly people that help them to guide their wheelchair to do a specific task.
 ---
 If you like the project give me a star! :star: 
