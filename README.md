@@ -11,3 +11,13 @@ You can see the video: &nbsp;&nbsp;
 ### This package checked on below systems :
 - Ubuntu Focal
 - ROS Noetic 
+- 
+### Runing process:
+1.open termial in your rasa project which models files placed.For instance:
+```
+cd /home/morteza/Desktop/rasaprojects
+```
+Run your virtual environment. For instance:
+```
+  source /home/morteza/Desktop/rasaprojects/venv/bin/activate
+```
