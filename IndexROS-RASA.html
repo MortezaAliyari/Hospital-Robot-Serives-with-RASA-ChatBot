@@ -1,26 +1,38 @@
 <html>
 	<body>
-<script>!(function () {
-  let e = document.createElement("script"),
-    t = document.head || document.getElementsByTagName("head")[0];
-  (e.src =
-    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
-    // Replace 1.x.x with the version that you want
-    (e.async = !0),
-    (e.onload = () => {
-      window.WebChat.default(
-        {
-	  intitpayload: '/greet',
-          customData: { language: "en" },
-          socketUrl: "https://localhost:5005",
-          // add other props here
-        },
-        null
-      );
-    }),
-    t.insertBefore(e, t.firstChild);
-})();
-</script>
+		<script>!(function () {
+		sessionStorage.clear();// remove chats history 
+		
+		  let e = document.createElement("script"),
+		    t = document.head || document.getElementsByTagName("head")[0];
+		  (e.src =
+		    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+		 
+		    (e.async = !0),
+		    (e.onload = () => {
+		      window.WebChat.default(
+			{
+			  intitpayload: '/greet',
+			  customData: { language: "en" },
+			  socketUrl: "http://0.0.0.0:5005",
+			  params:{
+			
+				storage: "session" // chats history location is "session", default is "local"
+				
+			  }
+			      
+
+			},
+			null
+		      );
+		    }),
+		    t.insertBefore(e, t.firstChild);
+		})();
+		
+	
+		</script>
+
+
 
 	</body>
 </html>
