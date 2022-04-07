@@ -253,6 +253,23 @@
             if (response.text) {
                 appendMessage(response.text, "received");
                 alert(response.text);
+              let botrep=response.text;
+              let result1 = botrep.indexOf("toilet");
+              let result2 = botrep.indexOf("room1");
+              let result3 = botrep.indexOf("room2");
+              let result4 = botrep.indexOf("receptionist");
+              if (result1==-1) {
+                let loc="toilet";
+              }
+              else if (result1==-1) {
+                let loc="room1";
+              }
+              else if (result1==-1) {
+                let loc="room2";
+              }
+              else if (result1==-1) {
+                let loc="receptionist";
+              }
             }
             if (response.attachment) {
                 appendImage(response.attachment.payload.src, "received");
