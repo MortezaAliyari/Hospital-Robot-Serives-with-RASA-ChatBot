@@ -252,6 +252,7 @@
             console.log("Bot uttered:", response);
             if (response.text) {
                 appendMessage(response.text, "received");
+                alert(response.text);
             }
             if (response.attachment) {
                 appendImage(response.attachment.payload.src, "received");
