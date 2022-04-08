@@ -1,0 +1,3 @@
+/home/sepideh/GAZEBO_Worlds/Hospital/build/CMakeFiles/rebuild_cache.dir
+/home/sepideh/GAZEBO_Worlds/Hospital/build/CMakeFiles/edit_cache.dir
+/home/sepideh/GAZEBO_Worlds/Hospital/build/CMakeFiles/ActorPlugin.dir
