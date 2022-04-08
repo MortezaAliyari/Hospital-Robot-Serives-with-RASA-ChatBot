@@ -2,6 +2,9 @@
 <html>
   <head>
     <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <script type="text/javascript" src="./simple_files/eventemitter2.min.js"></script>
+    <script type="text/javascript" src="./simple_files/roslib.min.js"></script>
+
     <title>Rasa&ROS</title>
     <style>
         /** CSS RESET **/
@@ -162,6 +165,26 @@
         }
 
     </style>
+    <script type="text/javascript">
+        var ros = new ROSLIB.Ros({
+          url : 'ws://0.0.0.0:9090'
+        });
+        ros.on('connection', function() {
+          console.log('MR1 Connected to websocket server.');
+        });
+        ros.on('error', function(error) {
+          console.log('MR1 Error connecting to websocket server: ', error);
+        });
+        ros.on('close', function() {
+          console.log('MR1 Connection to websocket server closed.');
+        });
+        var startcommand = new ROSLIB.Topic({
+          ros : ros,
+          name : '/rasachatbot',
+          messageType : 'std_msgs/String'
+        });
+
+    </script>
   </head>
   <body>
     <header class="header">
@@ -261,19 +284,24 @@
               let result4 = botrep.indexOf("receptionist");
               if (result1!=-1) {
                 let loc="toilet";
-                alert(loc);
+                var startMR1 = new ROSLIB.Message({data:'toilet'});
+                startcommand.publish(startMR1);
+
               }
               else if (result2!=-1) {
                 let loc="room1";
-                alert(loc);
+                var startMR1 = new ROSLIB.Message({data:'room1'});
+                startcommand.publish(startMR1);
               }
               else if (result3!=-1) {
                 let loc="room2";
-                alert(loc);
+                var startMR1 = new ROSLIB.Message({data:'room2'});
+                startcommand.publish(startMR1);
               }
               else if (result4!=-1) {
                 let loc="receptionist";
-                alert(loc);
+                var startMR1 = new ROSLIB.Message({data:'receptionist'});
+                startcommand.publish(startMR1);
               }
             }
             if (response.attachment) {
