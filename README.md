@@ -11,7 +11,7 @@ You can see the video: &nbsp;&nbsp;
 ### This package checked on below systems :
 - Ubuntu Focal
 - ROS Noetic 
-- 
+- RASA3.1
 ### Runing process:
 1.open termial in your rasa project which models files placed.For instance:
 ```
@@ -27,5 +27,5 @@ Then use launch file.
 ```
 Now you run  RVIZ, Gazebo, and all necessery lanuh files together.
 - last step:
-open `indexRASA&ROS.html` on chrome or firefox browser.
+open `indexROS-RASA.html` on chrome or firefox browser.
 ![Gazebo Environment](./img/ROS&RASA..jpg)
