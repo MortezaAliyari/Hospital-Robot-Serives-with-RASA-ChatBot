@@ -21,3 +21,11 @@ Run your virtual environment. For instance:
 ```
   source /home/morteza/Desktop/rasaprojects/venv/bin/activate
 ```
+Then use launch file.
+```
+  roslaucnh turtlebot3_navigation rasachatbot.launch
+```
+Now you run  RVIZ, Gazebo, and all necessery lanuh files together.
+- last step:
+open `indexRASA&ROS.html` on chrome or firefox browser.
+![Gazebo Environment](./img/ROS&RASA..jpg)
